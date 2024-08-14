@@ -14,7 +14,9 @@ CARRIERS = {
     "sprint": "@messaging.sprintpcs.com",
     "gmail": "@gmail.com"
 }
- 
+
+# Input personal email and password
+# Must use app-specific password to bypass 2-factor auth
 EMAIL = "example@email.com"
 PASSWORD = "password"
  
