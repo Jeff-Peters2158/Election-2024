@@ -101,12 +101,12 @@ def build_brief(margin, compMargin):
         if compMargin[state] > 0:
             compLeader = "Harris"
             compLead = compMargin[state]
-        elif margin[state] < 0:
+        elif compMargin[state] < 0:
             compLeader = "Trump"
             compLead = -1*compMargin[state]
         else:
             compLeader = "Even"
-            lead = compMargin[state]
+            compLead = compMargin[state]
         brief += "{:15s} {:6s} +{:.2f} -> {:6s} +{:.2f}\n\n".format(state + ":", leader, lead, compLeader, compLead)
     return brief
 
