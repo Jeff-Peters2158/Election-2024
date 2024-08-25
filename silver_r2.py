@@ -70,13 +70,13 @@ def get_margins(refData, compData):
     margin = dict()
     for line in refData[1:]:
         row = line.split(",")
-        margin[row[0]] = float(row[1]) - float(row[3])
+        margin[row[0]] = float(row[1]) - float(row[2])
 
     # calculate margins from new pulled data
     compMargin = dict()
     for line in compData[1:]:
         row = line.split(",")
-        compMargin[row[0]] = float(row[1]) - float(row[3])
+        compMargin[row[0]] = float(row[1]) - float(row[2])
 
     return margin, compMargin
 
