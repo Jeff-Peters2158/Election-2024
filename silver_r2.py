@@ -130,7 +130,7 @@ if __name__ == "__main__":
     while(True):
         time.sleep(pause)
         print("Checking Data...")
-        brief = get_data("https://static.dwcdn.net/data/OYvXP.csv")
+        brief = get_data("https://static.dwcdn.net/data/fgLCD.csv")
         if brief != None:
             print("Update sent!")
             content = brief
